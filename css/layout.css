@@ -5,7 +5,12 @@ body main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
+  body main {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
   body main {
     flex-direction: row-reverse;
   }
@@ -18,7 +23,12 @@ body main {
   width: 6.6rem;
   padding: 1.8rem 0;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
+  .top__logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
   .top__logo {
     display: none;
     margin: 0;
@@ -33,10 +43,17 @@ body main {
   background-size: cover;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .top__hero {
     background-image: url(../images/hero-desktop.jpg);
-    width: 40vw;
+    width: 43vw;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
+  .top__hero {
+    background-image: url(../images/hero-desktop.jpg);
+    width: 45vw;
     height: 100%;
   }
 }
@@ -47,7 +64,7 @@ body main {
 .bottom__logo {
   display: none;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .bottom__logo {
     display: block;
     margin: 2rem 0 8rem 8rem;
@@ -56,16 +73,33 @@ body main {
     width: 9rem;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 919px) {
+  .bottom__logo {
+    display: block;
+    margin: 2rem 0 8rem 2rem;
+  }
+  .bottom__logo img {
+    width: 8rem;
+  }
+}
 .bottom__head {
   letter-spacing: 0.6rem;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
+  word-spacing: 15rem;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .bottom__head {
     font-size: 51px;
     margin: 0 10rem 1rem 8rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
+  .bottom__head {
+    font-size: 48px;
+    margin: 0 0 1rem 2rem;
     text-align: left;
   }
 }
@@ -73,7 +107,12 @@ body main {
   padding: 2rem;
   color: var(--red);
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
+  .bottom__head span {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
   .bottom__head span {
     padding: 0;
   }
@@ -85,16 +124,22 @@ body main {
   color: var(--red);
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .bottom__body {
     margin: 0 10rem 3rem 8rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
+  .bottom__body {
+    margin: 0 1rem 3rem 2rem;
     text-align: left;
   }
 }
 
 .email {
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   padding: 0 1rem;
   border-radius: 1.5rem;
   border: 1.8px solid var(--red);
@@ -102,11 +147,19 @@ body main {
   position: relative;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .email {
     width: 30vw;
     height: 3.2rem;
-    margin: 0 8rem 3.8rem 8rem;
+    margin: 0 8rem 4.2rem 8rem;
+    padding: 0 1.2rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
+  .email {
+    width: 30vw;
+    height: 3rem;
+    margin: 0 1rem 1rem 2rem;
     padding: 0 1.2rem;
   }
 }
@@ -117,25 +170,59 @@ body main {
   position: absolute;
   right: 2rem;
   width: 4rem;
-  height: 2.8rem;
+  height: 2.6rem;
   background-color: var(--red);
   text-align: center;
 }
 .email__arrow img {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .email__arrow img {
     margin-top: 0.1rem;
   }
 }
-@media screen and (min-width: 495px) {
+@media screen and (min-width: 920px) {
   .email__arrow {
-    position: relative;
-    margin-left: -8.8rem;
-    top: 0.3rem;
+    left: 18.5rem;
     width: 5rem;
     height: 3.2rem;
+  }
+}
+@media screen and (min-width: 970px) {
+  .email__arrow {
+    left: 21rem;
+  }
+}
+@media screen and (min-width: 1018px) {
+  .email__arrow {
+    left: 23.5rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .email__arrow {
+    left: 26.3rem;
+  }
+}
+@media screen and (min-width: 1160px) {
+  .email__arrow {
+    left: 29rem;
+    width: 6rem;
+  }
+}
+@media screen and (min-width: 1325px) {
+  .email__arrow {
+    left: 32rem;
+    width: 6rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 919px) {
+  .email__arrow {
+    position: relative;
+    margin-left: -3rem;
+    top: 0.3rem;
+    width: 5rem;
+    height: 3rem;
   }
 }
 

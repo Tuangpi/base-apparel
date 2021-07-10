@@ -1,5 +1,6 @@
 body{
     font-size: 16px;
+    background-image: linear-gradient(135deg, hsl(0,0%,100%), hsl(0, 100%, 98%)),url(../images/bg-pattern-desktop.svg);
     main{
         display: flex;
         flex-direction: column;
@@ -140,8 +141,12 @@ body{
         right: 2rem;
         width: 4rem;
         height: 2.6rem;
-        background-color: var(--red);
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
         text-align: center;
+        transition: box-shadow 300ms ease-out;
+        &:hover{
+            box-shadow: 5px 10px 20px hsl(0, 74%, 74%);
+        }
         img{
             margin-top: 0.2rem;
             @media screen and (min-width: 920px) {

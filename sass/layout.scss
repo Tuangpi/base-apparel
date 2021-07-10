@@ -181,13 +181,16 @@ body{
 }
 .error{
     color: var(--soft-red);
-    margin: 1rem 0 3rem 1rem;
+    margin: 1rem 0 0 1rem;
     @media screen and (min-width: 600px) and (max-width: 919px) {
         margin-left: 3.2rem;
     }
     @media screen and (min-width: 920px){
         margin-left: 9.3rem;
-        margin-bottom: 2.1rem;
+        margin-top: 1rem;
+    }
+    @media screen and (min-width: 1033px) {
+        margin-top: -1rem;
     }
 }
 .icon_error{

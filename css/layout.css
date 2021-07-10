@@ -1,5 +1,7 @@
 body {
+  font-weight: 300;
   font-size: 16px;
+  font-family: "Josefin Sans", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-image: linear-gradient(135deg, white, #fff5f5), url(../images/bg-pattern-desktop.svg);
 }
 body main {
@@ -84,6 +86,7 @@ body main {
   }
 }
 .bottom__head {
+  font-weight: 400;
   letter-spacing: 0.6rem;
   text-transform: uppercase;
   text-align: center;
@@ -119,6 +122,7 @@ body main {
   }
 }
 .bottom__body {
+  line-height: 1.5rem;
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   text-align: center;
@@ -139,6 +143,7 @@ body main {
 }
 
 .email {
+  font-weight: 400;
   width: 100%;
   height: 12vh;
   padding: 0 1rem;
